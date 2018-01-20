@@ -24,15 +24,15 @@
         (numberCreated)="onNumberCreated($event)"
       ></app-game-control>
       <hr>
-      <div class="col-6">
-        <app-even *ngFor="let number of evenNumbers"
-        [evenNumber]="number"
-        >{{ number }}</app-even>
-      </div>
-      <div class="col-6">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
         <app-odd *ngFor="let number of oddNumbers"
         [oddNumber]="number"
-        >{{ number }}</app-odd>
+        ><p>ODD - {{ number }}</p></app-odd>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <app-even *ngFor="let number of evenNumbers"
+        [evenNumber]="number"
+        ><p>EVEN - {{ number }}</p></app-even>
       </div>
     </div>
   </div>

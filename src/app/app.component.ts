@@ -37,7 +37,8 @@ export class AppComponent {
   onNumberCreated(number: number) {
     if(number % 2 == 0) {
       this.evenNumbers.push(number);
+    } else {
+      this.oddNumbers.push(number);
     }
-    this.oddNumbers.push(number);
   }
 }
