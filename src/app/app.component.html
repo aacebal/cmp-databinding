@@ -17,4 +17,23 @@
     </app-server-element>
     </div>
   </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-game-control
+        (numberCreated)="onNumberCreated($event)"
+      ></app-game-control>
+      <hr>
+      <div class="col-6">
+        <app-even *ngFor="let number of evenNumbers"
+        [evenNumber]="number"
+        >{{ number }}</app-even>
+      </div>
+      <div class="col-6">
+        <app-odd *ngFor="let number of oddNumbers"
+        [oddNumber]="number"
+        >{{ number }}</app-odd>
+      </div>
+    </div>
+  </div>
 </div>
